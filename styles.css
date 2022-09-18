@@ -12,7 +12,8 @@ body {
     background-image: url(./assets/bg.jpg);
     background-position: top center;
     background-size: 100% auto;
-    background-size: no-repeat;
+/*  background-size: cover; */
+    background-repeat: no-repeat;
     background-color: #121214;
 }
 
@@ -24,7 +25,6 @@ body * {
 header {
     padding-top: 32px;
     height: calc(120px + 32px);
-    text-align: center;
 }
 
 header div {
@@ -52,12 +52,10 @@ header div img {
 main {
     max-width: 580px;
     width: 90%;
-    margin: auto;
+    margin: 32px auto;
 
     display: grid;
     gap: 24px;
-
-    margin-top: 32px;
 }
 
 section {
@@ -106,9 +104,10 @@ section ul li:hover {
     border-radius: 8px;
 }
 
-.channels-list img {
+.channel-list img {
     border-radius: 50%;
     width: 70px;
+    border: 1px solid #443E54;
 }
 
 /* animation */
@@ -147,7 +146,7 @@ main section:nth-child(3) {
     }
 }
 
-@keyframes fromBotton {
+@keyframes fromBottom {
     from {
         opacity: 0;
         transform: translateY(30px);
